@@ -38,12 +38,14 @@ YANIT VERME ADIMLARİ:
 3. Bilgiyi yaz ve hemen ardından o paragrafın numarasını ekle
 4. Başka bilgi gerekiyorsa, yine aynı şekilde kaynak numarasıyla birlikte ekle
   
+- YANITIN BAŞINDA SORUYU TEKRAR ETME, 'Cevap:' veya benzeri bir başlık yazma, SADECE YANITI DÖNDÜR
+
 YANIT:
 """
     data = {
         "model": OPENROUTER_MODEL,
         "messages": [
-            {"role": "system", "content": "Sen belge analiz asistanısın. Sadece verilen belgelerdeki bilgileri kullanırsın ve her bilgiye kaynak numarası eklersin."},
+            {"role": "system", "content": "Sen belge analiz asistanısın. Sadece verilen belgelerdeki bilgileri kullanırsın ve her bilgiye kaynak numarası eklersin. Yanıtın başında soruyu tekrar etme, 'Cevap:' veya benzeri bir başlık yazma, sadece cevabı döndür."},
             {"role": "user", "content": prompt}
         ],
         "max_tokens": 800,

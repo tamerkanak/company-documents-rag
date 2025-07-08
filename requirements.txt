@@ -1,4 +1,5 @@
-streamlit
+Flask
+Flask-Uploads
 chromadb
 sentence-transformers
 pdfplumber
